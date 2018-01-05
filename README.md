@@ -22,7 +22,8 @@ cd one
 
 for i in `ls`;
 
-do mv -f $i `echo $i | sed` 's/.....$/snail/'';
+# 将后边的8位字符改成swf
+do mv -f $i `echo $i | sed 's/........$/swf/'`;
 
 done
 ```
